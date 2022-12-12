@@ -8,6 +8,7 @@ const Sample = () => {
         res.json()
       );
     })
+    if (isLoading) return <div>Loading...</div>;
     return <div>{JSON.stringify(data)}</div>;
   };
 
